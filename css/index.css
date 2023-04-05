@@ -1,0 +1,37 @@
+.calculadora {
+    background-color: rgb(214, 251, 251);
+    width: 200px;
+    height: 250px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    border: 3px rgb(132, 132, 241) ridge;
+
+}
+
+#pantalla {
+    
+     width: 150px; 
+     border: 2px black solid; 
+     text-align: right; 
+     padding: 5px 5px;
+     background-color: white; 
+     overflow: hidden;
+     margin:auto;
+     height: 30px;
+     
+}
+
+.teclas input{
+    width: 30px;
+    text-align: center;
+}
+
+.teclas_largas input {
+    width: 52px;
+    margin-top: 10px;
+}
+
+.operadores{
+    background-color: rgb(245, 210, 245);
+}
