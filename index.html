@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,48 +8,52 @@
     <link rel="stylesheet" href="css/index.css">
     <title>Calculadora</title>
 </head>
+
 <body>
-    <div class="calculadora">
-        <div class="pantalla" id="pantalla">0</div>
-        <div class="teclas_largas">
-            <p>
+    <div class="container">
+        <div class="calculadora">
+
+            <div class="pantalla" id="pantalla">
+                <div id="valorAnterior">0</div>
+                <div id="valorActual">0</div>
+            </div>
+
+            <div class="teclas-largas " id="teclas">
                 <input type="button" value="Retr" class="operadores">
                 <input type="button" value="CE" class="operadores">
-                <input type="button" value="C" class="operadores">
-            </p>
-        </div>
-        <div class="teclas">
-            <p>
-                <input type="button" value="7">
-                <input type="button" value="8">
-                <input type="button" value="9">
+                <input type="button" value="C" class="operadores" >
+            </div>
+            <div class="teclas" id="teclas">
+                <input type="button" value="7" class="numero">
+                <input type="button" value="8" class="numero">
+                <input type="button" value="9" class="numero">
                 <input type="button" value="/" class="operadores">
                 <input type="button" value="Raiz" class="operadores">
-            </p>
-            <p>
-                <input type="button" value="4">
-                <input type="button" value="5">
-                <input type="button" value="6">
+
+                <input type="button" value="4" class="numero">
+                <input type="button" value="5" class="numero">
+                <input type="button" value="6" class="numero">
                 <input type="button" value="*" class="operadores">
                 <input type="button" value="%" class="operadores">
-            </p>
-            <p>
-                <input type="button" value="1">
-                <input type="button" value="2">
-                <input type="button" value="3">
+
+                <input type="button" value="1" class="numero">
+                <input type="button" value="2" class="numero">
+                <input type="button" value="3" class="numero">
                 <input type="button" value="-" class="operadores">
                 <input type="button" value="1/x" class="operadores">
-            </p>
-            <p>
-                <input type="button" value="0">
+
+                <input type="button" value="0" class="numero">
                 <input type="button" value="+/-" class="operadores">
                 <input type="button" value="." class="operadores">
                 <input type="button" value="+" class="operadores">
                 <input type="button" value="=" class="operadores">
-            </p>
-        </div>
-    </div>
-    
 
+            </div>
+        </div>
+
+    </div>
+
+    <script src="/js/app.js"></script>
 </body>
+
 </html>

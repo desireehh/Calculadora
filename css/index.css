@@ -1,37 +1,83 @@
-.calculadora {
-    background-color: rgb(214, 251, 251);
-    width: 200px;
-    height: 250px;
-    margin: auto;
-    padding: 20px;
-    text-align: center;
-    border: 3px rgb(132, 132, 241) ridge;
-
-}
-
-#pantalla {
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     
-     width: 150px; 
-     border: 2px black solid; 
-     text-align: right; 
-     padding: 5px 5px;
-     background-color: white; 
-     overflow: hidden;
-     margin:auto;
-     height: 30px;
+}
+
+/*Globals*/
+html{
+    font-family:"Arial", Helvetica, sans-serif;
+    color: #000;
+    font-size: 62.5%;
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.calculadora{
+    display: grid;
+    background-color: rgb(185, 226, 226);
+    grid-template-rows: 1.5fr 1fr 4fr;
+    padding: 30px;
+    }
+
+.calculadora .teclas {
+
+    display: grid;
+    grid-template-columns: repeat(5, 75px);
+    grid-template-rows: repeat(4, 75px);
+    grid-gap: 5px;
+    
+}
+
+.teclas-largas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    margin-bottom: 5px;
      
+       
 }
 
-.teclas input{
-    width: 30px;
-    text-align: center;
-}
+.teclas .numero{
+    font-size: 2rem;
+    background-color: rgb(200, 171, 227);
+    border-radius: 5px;
 
-.teclas_largas input {
-    width: 52px;
-    margin-top: 10px;
 }
 
 .operadores{
-    background-color: rgb(245, 210, 245);
+background-color: rgb(168, 118, 214);
+font-size: 2rem;
+border-radius: 5px;
+
+}
+.calculadora .pantalla {
+   display:inline-block;
+    height: 90%; 
+    width: 100%;
+    border: 2px black solid; 
+    border-radius: 5px;
+    text-align: right;
+    background-color: white; 
+    overflow: hidden;
+    vertical-align: center;
+    padding: 10px;
+}
+
+#valorActual{
+    font-size: 4rem;
+}
+
+#valorAnterior{
+    font-size: 2rem;
 }
