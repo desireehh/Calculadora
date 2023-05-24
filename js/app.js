@@ -22,21 +22,27 @@ teclas.forEach(tecla => {
 
     if(tecla.value==="C"){
        valorActual.innerText="0"
+       valorAnterior.innerText=valorActual.innerText
        return;
     }
   
 
     if(tecla.value==="="){
-      valorActual.innerText= eval(valorActual.innerText)
+     try {
+       valorActual.innerText= eval(valorActual.innerText)
       valorAnterior.innerText=valorActual.innerText;
+     } catch {
+
+      valorActual.innerText="ERROR"
       
+     }
       return;
 
       }
 
       
 
-    if (valorActual.innerText==="0" )
+    if (valorActual.innerText==="0" && tecla.value!=="=")  
      {
       valorActual.innerText=tecla.value;
      
