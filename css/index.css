@@ -33,7 +33,7 @@ html{
 .calculadora .teclas {
 
     display: grid;
-    grid-template-columns: repeat(5, 75px);
+    grid-template-columns: repeat(4, 75px);
     grid-template-rows: repeat(4, 75px);
     grid-gap: 5px;
     
@@ -41,7 +41,7 @@ html{
 
 .teclas-largas{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 5px;
     margin-bottom: 5px;
      
